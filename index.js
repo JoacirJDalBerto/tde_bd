@@ -2,15 +2,15 @@
 const express = require("express")
 const app = express();
 
-app.get("/", function(req,res){
+app.get("/", (req, res) => {
     res.send("Seja Bem-Vindo");
 });
 
-app.get("/sobre/", function(req,res){
+app.get("/sobre/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-(async () => {
+/* (async () => {
     const database = require('./db');
     const Postagem = require('./buscadados'); //nome do banco de dados
     try {
@@ -20,8 +20,8 @@ app.get("/sobre/", function(req,res){
         console.log(error);
     }
 })();
+ */
 
-
-app.listen(8081, function(){
+app.listen(8081, () => {
     console.log("Servidor Rodando na url http://localhost:8081")
 });
