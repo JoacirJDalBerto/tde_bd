@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "571234@H",
+    "database": "buscadados",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "571234@H",
+    "database": "buscadados",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "571234@H",
+    "database": "buscadados",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

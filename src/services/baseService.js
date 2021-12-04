@@ -1,6 +1,7 @@
 
 let arr1 = [];
 
+//Armazena dentro do array o projeto funcionario
 exports.projectEmployee = (employees, project_object ) => {
     let result = {};
     switch (employees["n"].labels[0]) {

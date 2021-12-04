@@ -1,4 +1,4 @@
-/*http://localhost:8081/sobre*/
+
 const express = require("express")
 const app = express();
 
