@@ -1,15 +1,38 @@
 const Sequelize = require('sequelize')
-const Models_base = require('./Date_bases/base')
-const sequelize = new Sequelize('buscadados', 'root', '571234@H',{
+const ModelNeo = require('./dataBase/neo')
+const ModelMongo = require('./dataBase/mongo')
+
+
+
+
+const connection = new Sequelize('projeto_funcionario', 'root', null,{
         host: "localhost",
         dialect: 'mysql'
     })
-
-let x = Models_base.getBaseData();
+/*
+let x = ModelNeo.getBaseData();
+let y = ModelMongo.getMongoData();
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 console.log(x)
+console.log("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
+console.log(y)
+console.log("------------xxxxxxxxx-------------------------")
+
+
 x.map(data=>{
     console.log(data.projeto_funcionario)
 })
+
+console.log("--------------yyyyyyyy--------------------")
+
+
+y.map(data=>{
+    console.log(data.projeto_funcionario)
+})
+
+
+*/
+/*
 const Postagem = sequelize.define('Postagem',{
     id_cargo: {
         type: Sequelize.FLOAT
@@ -22,8 +45,7 @@ const Postagem = sequelize.define('Postagem',{
     }
 })
 
-module.exports = Postagem;
-/*Postagem.sync({force: true})*/
+Postagem.sync({force: true})
 
     sequelize.authenticate().then(function(){
         console.log("Conectado com sucesso!")
@@ -33,3 +55,8 @@ module.exports = Postagem;
 
     //map(data => {})
     //npx sequelize-cli db:migrate
+*/
+
+
+module.exports = connection;
+    

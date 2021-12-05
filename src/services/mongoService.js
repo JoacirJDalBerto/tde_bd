@@ -14,13 +14,13 @@ exports.projectMongoEmployee = (employees) => {
         }
         arr2.push(result);
     }
-    if (employees["Funcionario"]) {
+    if (employees["funcionario"]) {
         result = {
             projeto_funcionario: {
                 funcionario: {
                     id: employees["_id"]["$oid"],
-                    fno: employees["Funcionario"][0].fno,
-                    fnome: employees["Funcionario"][0].fnome
+                    fno: employees["funcionario"][0].fno,
+                    fnome: employees["funcionario"][0].fnome
                 }
             }
         }

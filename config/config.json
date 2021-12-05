@@ -1,22 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "571234@H",
-    "database": "buscadados",
+    "password": null,
+    "database": "projeto_funcionario",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "571234@H",
-    "database": "buscadados",
+    "database": "projeto_funcionario",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "571234@H",
-    "database": "buscadados",
+    "database": "projeto_funcionario",
     "host": "localhost",
     "dialect": "mysql"
   }
