@@ -5,8 +5,8 @@ const baseJson = require('../json/neo.json')
 const neoService = require('../services/neoService');
 
 let arr1 = [];
-
-exports.getBaseData = () => {
+// tratar os dados
+exports.getNeoData = () => {
     let data = JSON.stringify(baseJson);
     let project_object = JSON.parse(data).find(
         projeto => projeto["n"].labels[0] == "Projeto_Funcionario"
